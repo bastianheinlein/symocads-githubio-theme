@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/navigation.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/fonts.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <nav>
+      <div class="navigation">
+        <div class="wrapper">
+          <a href="/"><img src="/assets/img/symocads.jpg" alt="Startseite"></a>
+          <input type="checkbox" name="navigation-button" id="navigation-button" class="navigation-button">
+          <div class="navigation-links">
+            <!--<a href="/cluster-1" class="cluster-link">Cluster 1</a>
+            <a href="/cluster-2" class="cluster-link">Cluster 2</a>
+            <a href="/cluster-3" class="cluster-link">Cluster 3</a>-->
+            <a href="https://www.fau.eu"class="fau-link"><img src="/assets/img/FAU_Wortmarke_RGB_blue.svg" alt="FAU" ></a>
+          </div>
+
+          <label for="navigation-button" class="navigation-button-label">
+            <span class="nav-hamburger-box">
+              <span class="nav-hamburger-inner"></span>
+            </span>
+          </label> 
+        </div>
+      </div>
+  </nav>
+
+  <div class="content">
+    <noscript>
+        <div class="error-message">
+            <h2>JavaScript nicht aktiviert</h2>
+            <p>Bitte aktviere JavaScript in deinem Browser, um diese Website vollständig nutzen zu können..</p>
+        </div>
+    </noscript>
+  </div>
+  <div class="content">
+    {{content}}
+  </div>
+      <footer>
+        <div class="content">
+          <ul>
+              <li><a href="https://www.symocads.research.fau.eu/datenschutz/" class="link">Privacy</a></li>
+              <li class="horizontal-spacer"></li>
+              <li><a href="https://www.symocads.research.fau.eu/impressum/" class="link">Imprint</a></li>
+          </ul>
+      </div>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
